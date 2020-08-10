@@ -1,0 +1,83 @@
+@import './variables.less';
+@import './fonts.less';
+
+.forArrow{
+    .arrow{
+        position: relative;
+        &__up,&__down{  
+            background-color: rgba(@white, .3);
+        }
+        &__up{
+           transform: skew(50deg);
+        }
+        &__down{
+           transform: skew(-50deg);
+        }
+    }
+}
+
+.container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 51px;        
+}
+
+.greenField{
+    background: @green @greenGradient;
+    transform: skew(-6deg);
+    box-sizing: border-box;
+    color: @white;
+    font: 9px 'Montserrat';
+    letter-spacing: 0.36px;
+}
+
+.greenBorders{
+    border: 2px solid transparent;
+    border-image: @greenGradient;
+    transform: skew(-6deg);
+    border-image-slice: 1;
+}
+
+.whiteField{
+    background-color: @white;
+    transform: skew(-6deg);
+}
+
+.callToActionButton{
+    position: relative;
+    color: @black;
+    transform: skew(-6deg);
+    padding: 15px 20px;
+    background-color: @orange;
+    background-image: @yellowGradient;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 47px 1px rgba(255, 176, 0, 0.32);
+    font: 30px 'Montserrat-Black';
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    transition: all .2s linear;
+
+    &:hover{
+        box-shadow: 0 0 47px 1px rgba(255, 174, 0, 1);
+    }
+}
+
+.yellowField{
+    background-image: @yellowGradient;
+    transform: skew(-6deg);
+    box-shadow: 0 0 24px 1px rgba(255, 173, 0, 0.32);
+}
+
+.backgroundImage{
+    background-image: url(../../../images/arrow.png);
+    background-size: contain;
+    background-position: left right;
+    margin-top: 42px;
+    overflow: hidden;
+}
+

@@ -1,0 +1,99 @@
+@media screen and (max-width: 487px){
+    body{
+        overflow: hidden-x;
+        .background-wrapper{
+            .header{
+                .container{
+                    max-width: 487px;
+                    padding-top: 20px;
+
+                    .image-block{
+                        display: none;
+                    }
+
+                    .wrapper{
+                        float: none;
+                        .customer-block{
+                            &__topic{
+                                font: 30px 'Montserrat-Black';
+                                line-height: 10px;
+                                letter-spacing: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main{
+                .steps{
+                    display: flex;
+                    justify-content: center;
+                    .container{
+                        .wrapper{
+                            .steps__step{
+                                max-width: 200px;
+                                margin: 25px 0;
+                                &::before{
+                                    font: 14px;
+                                }
+                                &_text{
+                                    font-size: 18px;
+                                }
+                                &_description{
+                                    font-size: 13px;
+                                    margin-top: 10px;
+                                }
+                            
+                            }
+
+                            .steps__step:nth-child(2){
+                                right: 60px;
+                            }
+                            
+                            .steps__step:nth-child(3){
+                                &::before{
+                                    content: '3';
+                                    padding: 8px 14px;
+                                }
+                            }
+
+                            // button
+                            .offer{
+                                align-self: center;
+                                font-size: 36px;
+                                margin-top: 81px;
+                                &:hover{
+                                    animation: move 1s linear 0.5s infinite;
+                                }
+                            }
+    
+
+                            .arrow-wrapper__steps-top, .arrow-wrapper__steps-middle, .arrow-wrapper__steps-bottom{
+                                .arrow{
+                                    &__up, &__down{
+                                        width: 5px;
+                                        height: 5px;
+                                    }
+                                }
+    
+                            }
+    
+                            .arrow-wrapper__steps-top{
+                                left: 32%;
+                                top: 57px;
+                                .arrow{
+                                   
+                                    &__up, &__down{
+                                        width: 5px;
+                                        height: 5px;
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
