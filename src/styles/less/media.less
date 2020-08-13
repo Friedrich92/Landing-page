@@ -1,12 +1,11 @@
-@media screen and (max-width: 487px){
+@media (min-width: 487px) and (max-width: 768px){
     body{
-        overflow: hidden-x;
         .background-wrapper{
-            .header{
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                .container{
+            .container{
+                .header{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
                     .image-block{
                         display: none;
                     }
@@ -14,31 +13,31 @@
                         float: none;
                         .customer-block{
                             &__topic{
-                                font: 30px 'Montserrat-Black';
+                                font-size: 30px;
                                 line-height: 10px;
                                 letter-spacing: 2px;
                             }
                         }
-
+    
                         .customer-block__customer{
                             display: none;
                         }
-
+    
                         .bonus-block{
                             &__percent{
-                                font: 100px "Montserrat-Black";
+                                font-size: 100px;
                             }
                             &__text{
-                                font: 18px "Montserrat";
+                                font-size: 18px;
                             }
                         }
-
+    
                         .amount-block{
                             &__amount{
-                                font: 28px 'Montserrat-ExtraBold';
+                                font-size: 28px;
                             }
                             &__border{
-                                font: 15px 'Montserrat-SemiBold';
+                                font-size: 15px;
                                 padding: 12px;
                                 margin: 0;
                                 right: 6px;
@@ -51,15 +50,20 @@
                                 top: 118px;
                             }
                         }
+
+                        .sign-up{
+                            &:hover{
+                                animation: none;
+                            }
+                        }
             
                     }
                 }
-            }
 
-            .main{
-                .steps{
-                    display: flex;
-                    .container{
+                .main{
+                    .steps{
+                        display: flex;
+                        justify-content: center;
                         .steps-wrapper{
                             .steps__step{
                                 margin-top: 45px;
@@ -86,24 +90,21 @@
                             .steps__step:nth-child(2){
                                 right: 0px;
                                 &::before{
-                                    content: '2';
                                     padding: 8px 14px;
                                 }
                             }
         
                             .steps__step:nth-child(3){
                                 &::before{
-                                    content: '3';
                                     padding: 8px 14px;
                                 }
                             }
                             // button
                             .offer{
-                                align-self: center;
                                 font-size: 36px;
                                 margin-top: 81px;
                                 &:hover{
-                                    animation: move 1s linear 0.5s infinite;
+                                    animation: none;
                                 }
                             }
 
@@ -128,12 +129,7 @@
 
                         }
                     }
-                }
-
-
-                .icons{
-                    margin-top: 51px;
-                    .container{
+                    .icons{
                         .icon-wrapper{
                             flex-direction: column;
                             align-items: center;
@@ -150,11 +146,7 @@
                             }
                         }
                     }
-                }
-
-                .registration{
-                   
-                    .container{
+                    .registration{
                         .registration-wrapper{
                             
                             .registration__form{
@@ -173,7 +165,7 @@
                                 &_submit{
                                     transform: skew(0deg);
                                     &:hover{
-                                        animation: move .5s linear infinite;
+                                        animation: none;
                                     }
                                     
                                 }
@@ -181,28 +173,27 @@
                         }
                     }
                 }
-            }
 
-            .footer{
-                .container{
+                .footer{
                     .payment-wrapper{
                         display: none;
                     }
                 }
+    
             }
+
         }
     }
 }
 
-@media screen and (max-width: 320px){
+@media (min-width: 320px) and (max-width: 486px){
     body{
-        overflow: hidden-x;
-        .background-wrapper{
-            .header{
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                .container{
+       .background-wrapper{
+           .container{
+                .header{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
                     .image-block{
                         display: none;
                     }
@@ -211,8 +202,6 @@
                         .customer-block{
                             &__topic{
                                 font-size: 18px;
-                                line-height: 10px;
-                                letter-spacing: 2px;
                             }
                         }
 
@@ -222,19 +211,19 @@
 
                         .bonus-block{
                             &__percent{
-                                font-size: 70px;
+                                font: 100px "Montserrat-Black";
                             }
                             &__text{
-                                font-size: 18px;
+                                font: 18px "Montserrat-Thin";
                             }
                         }
 
                         .amount-block{
                             &__amount{
-                                font-size: 25px;
+                                font: 28px 'Montserrat-ExtraBold';
                             }
                             &__border{
-                                font-size: 15px;
+                                font: 15px 'Montserrat-SemiBold';
                                 padding: 12px;
                                 margin: 0;
                                 right: 6px;
@@ -243,23 +232,13 @@
                                     left: 6px;
                                 }
                             }
-
-                            .arrow-wrapper__amount, .arrow-wrapper__amount-down{
-                                .arrow{
-                                    &__up, &__down{
-                                        width: 5px;
-                                        height: 8px;
-                                    }
-                                }
-                            }
-                    
                             .arrow-wrapper__amount-down{
-                                display: none
+                                top: 118px;
                             }
                         }
 
                         .sign-up{
-                            font-size: 18px;
+                            font-size: 20px;
                             &:hover{
                                 animation: none;
                             }
@@ -267,49 +246,58 @@
             
                     }
                 }
-            }
-
-            .main{
-                .steps{
-                    .container{
+                .main{
+                    .steps{
+                        display: flex;
+                        justify-content: center;
                         .steps-wrapper{
                             .steps__step{
                                 margin-top: 45px;
                                 text-align: center;
-                                &::before{
-                                    padding: 5px 10px;    
-                                }
                                 .text__wrapper{
                                     &_text{
                                         font-size: 20px;
-                                        padding: 10px 20px;
+                                        padding: 15px 20px;
                                     }
                                     &_description{
-                                        font-size: 15px;
+                                        max-width: 260px;
+                                        font-size: 18px;
                                     }
                                 }
-                                
+                                &::before{
+                                    font-size: 10px;
+                                }
      
                             }
-                            .steps__step:nth-child(2), .steps__step:nth-child(3){
+
+                            .steps__step:nth-child(1){
                                 &::before{
-                                    padding: 5px 10px;
+                                    left: 18px;
+                                }
+                            }
+                            .steps__step:nth-child(2){
+                                right: 0px;
+                                &::before{
+                                    padding: 8px 14px;
                                 }
                             }
         
+                            .steps__step:nth-child(3){
+                                &::before{
+                                    padding: 8px 14px;
+                                }
+                            }
                             // button
                             .offer{
-                                font-size: 18px;
-                                &:hover{
-                                    animation: none;
-                                }
+                                font-size: 25px;
+                                margin-top: 50px;
                             }
 
                             .arrow-wrapper__steps-top, .arrow-wrapper__steps-middle, .arrow-wrapper__steps-bottom{
                                 .arrow{
                                     &__up, &__down{
-                                        width: 5px;
-                                        height: 5px;
+                                        width: 7px;
+                                        height: 7px;
                                     }
                                 }
     
@@ -321,20 +309,26 @@
                             }
 
                             .arrow-wrapper__steps-top{
-                                left: 65px;
+                                left: 67px;
                             }
 
                         }
                     }
-                }
-
-                .icons{
-                    margin-top: 40px;
-                    .container{
+                    .icons{
+                        margin-top: 100px;
                         .icon-wrapper{
+                            flex-direction: column;
                             .icons__icon{ 
-                                margin-top: 35px;
+                                margin-top: 50px;
                                 top: 0px;
+                                &_picture{
+                                    outline-offset: 10px;
+                                    width: 35px;
+                                    height: 35px;
+                                }
+                                &_description{
+                                    font-size: 18px;
+                                }
                                 &:nth-child(1){
                                     margin-top: 0;
                                 }
@@ -342,45 +336,34 @@
                                 &:nth-child(even){
                                     top: 0px;
                                 }
-
-                                &_picture{
-                                    outline-offset: 15px;
-                                    width: 28px;
-                                    height: 28px;
-                                    padding: 18px;
-                                }
-                                &_description{
-                                    font-size: 16px;
-                                    margin-top: 22px;
-                                }
                             }
                         }
                     }
-                }
-
-                .registration{   
-                    margin-top: 50px;
-                    .container{
+                    .registration{
                         .registration-wrapper{
+                            
                             .registration__form{
-                                width: 250px;
+                                flex-direction: column;
                                 &::before{
-                                    font-size: 12px;
-                                    padding: 8px;
-                                    top: -35px;
+                                    transform: skew(0deg);
+                                    left: 0px;
+                                    padding: 7px 20px;
+                                    top: -37px;
+                                    font-size: 15px;
                                 }
                                 &_input{
-                                    width: 100%;  
-                                    height: 35px;
-                                    padding-left: 10px;
-                                    &::-webkit-input-placeholder{
-                                        font-size: 15px;
-                                    }
+                                    width: 245px;
+                                    height: 40px;
+                                    transform: skew(0deg);
+                                }
+                                &_input:nth-child(2){
+                                    margin: 25px 0 25px 0;
+                                    
                                 }
                                 &_submit{
-                                    align-self: center;
-                                    padding: 10px 10px;
-                                    font-size: 15px;
+                                    font-size: 18px;
+                                    padding: 10px;
+                                    transform: skew(0deg);
                                     &:hover{
                                         animation: none;
                                     }
@@ -389,8 +372,16 @@
                             }
                         }
                     }
+                    
                 }
-            }
-        }
+                .footer{
+                    .payment-wrapper{
+                        display: none;
+                    }
+                }
+    
+           }
+       }
     }
 }
+

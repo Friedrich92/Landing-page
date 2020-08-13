@@ -2,6 +2,10 @@
 @import './fonts.less';
 @import './mixins.less';
 
+html{
+    overflow-x: hidden;
+}
+
 body{
     margin: 0;
     .background-wrapper{
@@ -30,19 +34,13 @@ body{
             background-position: top center;
             background-repeat: no-repeat;
         }
-        .header{
-            .container.clearfix{
-                &::before,::after{
-                    content: '';
-                    display: block;
-                    clear: both;
-                }
-            }
-            .container{
-                .container();
+
+        .container{
+            .container();
+            .header{
                 .customer-wrapper{
                     float: left;
-                    padding: 0 25px;
+                    padding: 0px 25px;
                     .customer-block{
                         display: flex;
                         justify-content: center;
@@ -107,7 +105,7 @@ body{
                         }
                         &__text{
                             color: @yellow;
-                            font: 28px "Montserrat";
+                            font: 28px "Montserrat-Thin";
                             letter-spacing: 2px;
                             font-weight: 500;
                             margin: 0;
@@ -181,7 +179,6 @@ body{
                             animation: move .5s linear infinite;
                         }
                     }
-                    
                 }
 
                 .image-block{
@@ -199,16 +196,12 @@ body{
                         transition: all .5s;
                     }
                 }
-    
             }
-        }
-    
-        // main
-        .main{
-            margin-top: 25px; 
-            position: relative;
-            .steps{
-                .container{
+
+            .main{
+                margin-top: 25px;
+                position: relative;
+                .steps{
                     .steps-wrapper{
                         display: flex;
                         flex-direction: column;
@@ -242,7 +235,7 @@ body{
                                 &_description{
                                     max-width: 260px;
                                     color: @secondary;
-                                    font: 18px 'Montserrat';
+                                    font: 18px 'Montserrat-Thin';
                                     line-height: 24px;
                                     text-align: center;
                                     margin: 0;
@@ -275,7 +268,6 @@ body{
                             align-self: center;
                             font-size: 36px;
                             margin-top: 81px;
-                            overflow: hidden;
                             &:hover{
                                 animation: move .3s linear infinite;
                             }
@@ -325,11 +317,8 @@ body{
     
                     }
                 }
-            }
-    
-            .icons{
-                margin-top: 51px;
-                .container{
+                .icons{
+                    margin-top: 50px;
                     .icon-wrapper{
                         display: flex;
                         justify-content: space-between;
@@ -350,7 +339,7 @@ body{
                                 padding: 20px;
                             }
                             &_description{
-                                font: 20px 'Montserrat';
+                                font: 20px 'Montserrat-Thin';
                                 line-height: 26px;
                                 color: @white;
                                 letter-spacing: 0.4px;
@@ -373,11 +362,8 @@ body{
                         }
                     }
                 }
-            }
-    
-            .registration{
-                margin-top: 101px;
-                .container{
+                .registration{
+                    margin-top: 100px;
                     .registration-wrapper{
                         display: flex;
                         padding: 0 25px;
@@ -407,7 +393,7 @@ body{
                                 padding-left: 27px;
                                 width: 375px;  
                                 height: 55px;
-                                font: 15px 'Montserrat';
+                                font: 15px 'Montserrat-Thin';
                                 font-style: italic;
                                 &:nth-child(2){
                                     margin: 0 12px;
@@ -415,7 +401,7 @@ body{
     
                                 // for placeholder  
                                 &::-webkit-input-placeholder{
-                                    font: 18px 'Montserrat';
+                                    font: 18px 'Montserrat-Thin';
                                     font-style: italic;
                                 }
                             }
@@ -430,7 +416,6 @@ body{
                                 font: 20px 'Montserrat-Black';
                                 font-style: italic;
                                 text-transform: uppercase;
-                                overflow: hidden;
                                 transition: background .2s linear;
                                 box-sizing: content-box;
                                 &:hover{
@@ -444,10 +429,9 @@ body{
                     }
                 }
             }
-        }
-    
-        .footer{
-            .container{
+            
+            .footer{
+                margin-top: 50px;
                 .payment-wrapper{
                     display: flex;
                     justify-content: center;
@@ -477,6 +461,7 @@ body{
                 }
             }
         }
+    
     }
 }
 
